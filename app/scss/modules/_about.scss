@@ -1,0 +1,105 @@
+.wrapper {
+    @include size(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    @media (min-width: $width-md) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .img__wrapper {
+        @include size(80%, 25rem);
+        background: url('../images/about.jpg') no-repeat center center;
+        background-size: cover;
+        @media (min-width: $width-md) {
+            @include size(100%, 40rem);
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 25rem;
+        background: url(../images/about.jpg) no-repeat 50%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .img__text {
+            padding: 2rem 0 0 0;
+            font-size: 2.25rem;
+            color: #fff;
+        }
+    }
+    .text__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: $width-md) {
+            padding: 0 7rem;
+        }
+        .text__main {
+            padding: 2rem 0;
+        }
+        .tetx__link {
+            text-transform: none;
+            color: #000;
+            padding: 1rem 2rem;
+            width: 10rem;
+            border: 2px solid #000;
+        }
+    }
+}
+
+.img__ico {
+    @include size(5rem);
+    display: inline-block;
+    //@include sprite($about-image);
+}
+
+.grid-container {
+    display: grid;
+    @media (min-width: $width-md) {
+        grid-template-columns: 1fr 1fr 1fr;
+        //grid-template-rows: 1fr 1fr;
+    }
+}
+
+.tile {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color: #dbdbdb;
+    &:nth-child(even) {
+        background-color: #ebebeb;
+    }
+    &__headline {
+        font-size: 1.8rem;
+        padding: 0 0 1rem 0;
+        text-align: center;
+        @media (min-width: $width-md) {
+            font-size: 2rem;
+        }
+    }
+    &__text {
+        text-align: center;
+    }
+}
+
+.tile__lg {
+    grid-row: span 2;
+    height: 40rem;
+    background: url('../images/tile.jpg') no-repeat bottom center;
+    background-size: cover;
+    @media (min-width: $width-md) {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
+    }
+}

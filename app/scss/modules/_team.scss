@@ -1,0 +1,83 @@
+.team__header {
+    padding-top: 4rem;
+}
+
+.slider__team {
+    position: relative;
+}
+
+.item {
+    &__wrapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem
+    }
+    &__photo {
+        border: 15px solid #ebebeb;
+        border-radius: 50%;
+        @include size(13rem);
+    }
+    &__text {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5rem;
+        //padding: 2rem 4rem;
+        width: 100%;
+        position: relative;
+        &:before {
+            content: '';
+            @include pos($t: -110px, $l: 0);
+            @include size(100%, 10rem);
+            z-index: -1;
+            background-color: #fff;
+        }
+        &-name {
+            font-size: 1.4rem;
+            color: #9f9acf;
+        }
+        //&-info {}
+    }
+    &__footer {
+        @include size(100%, 4.5rem);
+        height: 4.5rem;
+        background-color: #9f9acf;
+    }
+}
+
+.social__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include size(100%);
+    padding: 0 1.7rem;
+}
+
+.slick-arrow {
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-next {
+    @include pos($t: 45%, $r: -5%);
+    @include size(2rem);
+    background: url('../images/icons/arrow-black.png') no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+.slick-prev {
+    @include pos($t: 45%, $l: -5%);
+    @include size(2rem);
+    background: url('../images/icons/arrow-black.png') no-repeat;
+    background-size: contain;
+    font-size: 0;
+    transform: rotateY(180deg);
+}

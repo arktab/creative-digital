@@ -1,0 +1,21 @@
+:root {
+  --triangle:url('data:image/svg+xml,\
+  <svg height="130" width="130"><path d="M75 25 L37 100 L112 100 Z" style="fill:none; stroke:orange; stroke-width:20;  animation: move 3.8s linear infinite; "/>\
+  <style>@keyframes move {0%{stroke: orange;}50%{stroke: white;}100%{stroke: orange;}}</style>\
+  </svg>');
+--cross:url('data:image/svg+xml,\
+<svg class="cross__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="fill:none;stroke:orange;stroke-width:7; stroke-dasharray: 100px,50px; stroke-dashoffset: 20; animation: move 2.8s linear infinite; "><path class="cross__path cross__path--right" fill="none" d="M16,16 l20,20" /><path class="cross__path cross__path--right" fill="none" d="M16,36 l20,-20" />\
+/><style>@keyframes move {0%{stroke-dashoffset: 20px;}100%{stroke-dashoffset: 150px;}}</style>\
+</svg>');
+}
+
+.h1 {
+    background: var(--triangle) no-repeat ;
+}
+
+.h6{
+    background: var(--cross) no-repeat  right;
+}
+.cross__svg{
+  height: 100%;
+}

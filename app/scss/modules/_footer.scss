@@ -1,0 +1,13 @@
+.footer {
+    height: 20vh;
+    background: #9f9acf;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include size(100%);
+    }
+    .social__items {
+        width: 15rem;
+    }
+}
