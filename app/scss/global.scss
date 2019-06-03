@@ -8,9 +8,10 @@
 // Page styles
 @import "modules/_header";
 @import "modules/_about";
+@import "modules/_recent";
 @import "modules/_team";
 @import "modules/_map";
 @import "modules/_footer";
 @import "modules/_topbtn";
 //sprite
-@import "../css/sprites/sprite.scss"
+@import "sprites/sprite";

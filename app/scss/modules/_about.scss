@@ -10,11 +10,20 @@
         justify-content: space-around;
     }
     .img__wrapper {
-        @include size(80%, 25rem);
-        background: url('../images/about.jpg') no-repeat center center;
-        background-size: cover;
+        &:after {
+            @extend .filter;
+        }
+        &:before {
+            @extend .background__image;
+            background: url('../images/about.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        position: relative;
+        @include size(80%,
+        25rem);
         @media (min-width: $width-md) {
-            @include size(100%, 40rem);
+            @include size(100%,
+            40rem);
         }
         display: flex;
         flex-direction: column;
@@ -22,12 +31,11 @@
         align-items: center;
         width: 80%;
         height: 25rem;
-        background: url(../images/about.jpg) no-repeat 50%;
-        background-size: cover;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         align-items: center;
+        padding: 7rem 0 0 0;
         .img__text {
             padding: 2rem 0 0 0;
             font-size: 2.25rem;
@@ -46,17 +54,20 @@
             padding: 2rem 0;
         }
         .tetx__link {
-            text-transform: none;
+            text-decoration: none;
             color: #000;
             padding: 1rem 2rem;
             width: 10rem;
             border: 2px solid #000;
+            // &:hover {
+            //     filter: invert(1); 
+            // }
         }
     }
 }
 
 .img__ico {
-    @include size(5rem);
+    @include size(3.5rem);
     display: inline-block;
     //@include sprite($about-image);
 }
@@ -103,3 +114,7 @@
         grid-row: 1 / span 2;
     }
 }
+
+// .icon-design {
+//     @include sprite-image($twitter-image);
+// }

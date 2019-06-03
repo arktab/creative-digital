@@ -6,6 +6,7 @@
                     @include pos($t: 0, $l: 0);
                     @include size(100%);
                     opacity: .5;
+                    z-index: -1;
                     background: url('../images/header-bg-mobile.jpg') no-repeat bottom center;
                     background-size: cover;
                     @media (min-width: $width-md) {
@@ -14,15 +15,12 @@
                     }
                 }
                 &:after {
-                    content: '';
-                    @include pos($t: 0, $l: 0);
-                    @include size(100%);
-                    background-color: $header__bg;
-                    z-index: -1;
+                    @extend .filter;
                 }
                 &__nav {
                     display: flex;
                     justify-content: space-between;
+                    margin: 1rem 0 0 0;
                     .logo {
                         &__img {
                             @include size(4.5rem);
@@ -122,11 +120,15 @@
                     padding: 0;
                 }
                 @media (min-width: $width-md) {
-                    padding: 10rem;
+                    padding: 16rem 0 0 0;
                 }
                 .headline {
                     font-family: $mfb;
                     font-size: 4.5rem;
+                    line-height: 3.5rem;
+                    @media (min-width: $width-md) {
+                        line-height: 4.5rem;
+                    }
                     font-weight: 700;
                 }
                 .text {

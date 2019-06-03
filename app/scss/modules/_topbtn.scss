@@ -1,15 +1,19 @@
     #btn__top {
-        background-color: #665f60;
         @include size(4rem);
         z-index: 3;
-        @include pos($b: 5rem, $r: 5rem);
+        @include pos($b: 8rem, $r: 5rem);
         position: fixed;
-        transition: all 1s;
+        transition: all .6s;
         opacity: 0;
         outline: none;
-        background: rgba(0, 0, 0, .5) url('../images/icons/arrow-black-top.png') no-repeat center center;
+        background: rgba(159, 154, 207, .5) url('../images/icons/arrow-black.png') no-repeat center center;
         background-blend-mode: darken;
-        background-size: 80%;
+        background-size: 30%;
+        transform: rotateZ(-90deg);
+        &:hover {
+            background: rgba(159, 154, 207, 1) url('../images/icons/arrow-black.png') no-repeat center center;
+            background-size: 30%;
+        }
         &:focus {
             outline: none;
         }

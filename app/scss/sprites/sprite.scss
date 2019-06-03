@@ -1,0 +1,276 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$about-name: 'about';
+$about-x: 122px;
+$about-y: 61px;
+$about-offset-x: -122px;
+$about-offset-y: -61px;
+$about-width: 50px;
+$about-height: 54px;
+$about-total-width: 255px;
+$about-total-height: 179px;
+$about-image: 'sprite.png';
+$about: (122px, 61px, -122px, -61px, 50px, 54px, 255px, 179px, 'sprite.png', 'about', );
+$arrow-black-name: 'arrow-black';
+$arrow-black-x: 82px;
+$arrow-black-y: 119px;
+$arrow-black-offset-x: -82px;
+$arrow-black-offset-y: -119px;
+$arrow-black-width: 22px;
+$arrow-black-height: 38px;
+$arrow-black-total-width: 255px;
+$arrow-black-total-height: 179px;
+$arrow-black-image: 'sprite.png';
+$arrow-black: (82px, 119px, -82px, -119px, 22px, 38px, 255px, 179px, 'sprite.png', 'arrow-black', );
+$arrow-white-name: 'arrow-white';
+$arrow-white-x: 104px;
+$arrow-white-y: 119px;
+$arrow-white-offset-x: -104px;
+$arrow-white-offset-y: -119px;
+$arrow-white-width: 22px;
+$arrow-white-height: 38px;
+$arrow-white-total-width: 255px;
+$arrow-white-total-height: 179px;
+$arrow-white-image: 'sprite.png';
+$arrow-white: (104px, 119px, -104px, -119px, 22px, 38px, 255px, 179px, 'sprite.png', 'arrow-white', );
+$behance-name: 'behance';
+$behance-x: 219px;
+$behance-y: 125px;
+$behance-offset-x: -219px;
+$behance-offset-y: -125px;
+$behance-width: 32px;
+$behance-height: 32px;
+$behance-total-width: 255px;
+$behance-total-height: 179px;
+$behance-image: 'sprite.png';
+$behance: (219px, 125px, -219px, -125px, 32px, 32px, 255px, 179px, 'sprite.png', 'behance', );
+$design-name: 'design';
+$design-x: 172px;
+$design-y: 0px;
+$design-offset-x: -172px;
+$design-offset-y: 0px;
+$design-width: 47px;
+$design-height: 61px;
+$design-total-width: 255px;
+$design-total-height: 179px;
+$design-image: 'sprite.png';
+$design: (172px, 0px, -172px, 0px, 47px, 61px, 255px, 179px, 'sprite.png', 'design', );
+$facebook-name: 'facebook';
+$facebook-x: 219px;
+$facebook-y: 93px;
+$facebook-offset-x: -219px;
+$facebook-offset-y: -93px;
+$facebook-width: 32px;
+$facebook-height: 32px;
+$facebook-total-width: 255px;
+$facebook-total-height: 179px;
+$facebook-image: 'sprite.png';
+$facebook: (219px, 93px, -219px, -93px, 32px, 32px, 255px, 179px, 'sprite.png', 'facebook', );
+$google-name: 'google';
+$google-x: 90px;
+$google-y: 60px;
+$google-offset-x: -90px;
+$google-offset-y: -60px;
+$google-width: 32px;
+$google-height: 32px;
+$google-total-width: 255px;
+$google-total-height: 179px;
+$google-image: 'sprite.png';
+$google: (90px, 60px, -90px, -60px, 32px, 32px, 255px, 179px, 'sprite.png', 'google', );
+$house-name: 'house';
+$house-x: 172px;
+$house-y: 61px;
+$house-offset-x: -172px;
+$house-offset-y: -61px;
+$house-width: 38px;
+$house-height: 36px;
+$house-total-width: 255px;
+$house-total-height: 179px;
+$house-image: 'sprite.png';
+$house: (172px, 61px, -172px, -61px, 38px, 36px, 255px, 179px, 'sprite.png', 'house', );
+$linkedin-name: 'linkedin';
+$linkedin-x: 219px;
+$linkedin-y: 61px;
+$linkedin-offset-x: -219px;
+$linkedin-offset-y: -61px;
+$linkedin-width: 32px;
+$linkedin-height: 32px;
+$linkedin-total-width: 255px;
+$linkedin-total-height: 179px;
+$linkedin-image: 'sprite.png';
+$linkedin: (219px, 61px, -219px, -61px, 32px, 32px, 255px, 179px, 'sprite.png', 'linkedin', );
+$marker-name: 'marker';
+$marker-x: 0px;
+$marker-y: 119px;
+$marker-offset-x: 0px;
+$marker-offset-y: -119px;
+$marker-width: 42px;
+$marker-height: 60px;
+$marker-total-width: 255px;
+$marker-total-height: 179px;
+$marker-image: 'sprite.png';
+$marker: (0px, 119px, 0px, -119px, 42px, 60px, 255px, 179px, 'sprite.png', 'marker', );
+$mobile-name: 'mobile';
+$mobile-x: 126px;
+$mobile-y: 119px;
+$mobile-offset-x: -126px;
+$mobile-offset-y: -119px;
+$mobile-width: 20px;
+$mobile-height: 34px;
+$mobile-total-width: 255px;
+$mobile-total-height: 179px;
+$mobile-image: 'sprite.png';
+$mobile: (126px, 119px, -126px, -119px, 20px, 34px, 255px, 179px, 'sprite.png', 'mobile', );
+$phone-name: 'phone';
+$phone-x: 219px;
+$phone-y: 0px;
+$phone-offset-x: -219px;
+$phone-offset-y: 0px;
+$phone-width: 36px;
+$phone-height: 61px;
+$phone-total-width: 255px;
+$phone-total-height: 179px;
+$phone-image: 'sprite.png';
+$phone: (219px, 0px, -219px, 0px, 36px, 61px, 255px, 179px, 'sprite.png', 'phone', );
+$seo-name: 'seo';
+$seo-x: 122px;
+$seo-y: 0px;
+$seo-offset-x: -122px;
+$seo-offset-y: 0px;
+$seo-width: 50px;
+$seo-height: 61px;
+$seo-total-width: 255px;
+$seo-total-height: 179px;
+$seo-image: 'sprite.png';
+$seo: (122px, 0px, -122px, 0px, 50px, 61px, 255px, 179px, 'sprite.png', 'seo', );
+$services-name: 'services';
+$services-x: 0px;
+$services-y: 0px;
+$services-offset-x: 0px;
+$services-offset-y: 0px;
+$services-width: 62px;
+$services-height: 60px;
+$services-total-width: 255px;
+$services-total-height: 179px;
+$services-image: 'sprite.png';
+$services: (0px, 0px, 0px, 0px, 62px, 60px, 255px, 179px, 'sprite.png', 'services', );
+$team-name: 'team';
+$team-x: 62px;
+$team-y: 0px;
+$team-offset-x: -62px;
+$team-offset-y: 0px;
+$team-width: 60px;
+$team-height: 60px;
+$team-total-width: 255px;
+$team-total-height: 179px;
+$team-image: 'sprite.png';
+$team: (62px, 0px, -62px, 0px, 60px, 60px, 255px, 179px, 'sprite.png', 'team', );
+$twitter-name: 'twitter';
+$twitter-x: 58px;
+$twitter-y: 60px;
+$twitter-offset-x: -58px;
+$twitter-offset-y: -60px;
+$twitter-width: 32px;
+$twitter-height: 32px;
+$twitter-total-width: 255px;
+$twitter-total-height: 179px;
+$twitter-image: 'sprite.png';
+$twitter: (58px, 60px, -58px, -60px, 32px, 32px, 255px, 179px, 'sprite.png', 'twitter', );
+$web-name: 'web';
+$web-x: 0px;
+$web-y: 60px;
+$web-offset-x: 0px;
+$web-offset-y: -60px;
+$web-width: 58px;
+$web-height: 59px;
+$web-total-width: 255px;
+$web-total-height: 179px;
+$web-image: 'sprite.png';
+$web: (0px, 60px, 0px, -60px, 58px, 59px, 255px, 179px, 'sprite.png', 'web', );
+$works-name: 'works';
+$works-x: 42px;
+$works-y: 119px;
+$works-offset-x: -42px;
+$works-offset-y: -119px;
+$works-width: 40px;
+$works-height: 60px;
+$works-total-width: 255px;
+$works-total-height: 179px;
+$works-image: 'sprite.png';
+$works: (42px, 119px, -42px, -119px, 40px, 60px, 255px, 179px, 'sprite.png', 'works', );
+$spritesheet-width: 255px;
+$spritesheet-height: 179px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($about, $arrow-black, $arrow-white, $behance, $design, $facebook, $google, $house, $linkedin, $marker, $mobile, $phone, $seo, $services, $team, $twitter, $web, $works, );
+$spritesheet: (255px, 179px, 'sprite.png', $spritesheet-sprites, );
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url('sprites/#{$sprite-image}');
+}
+
+@mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+    @each $sprite in $sprites {
+        $sprite-name: nth($sprite, 10);
+        .#{$sprite-name} {
+            @include sprite($sprite);
+        }
+    }
+}

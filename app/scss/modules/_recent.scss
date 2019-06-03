@@ -1,0 +1,57 @@
+    .recent {
+        position: relative;
+        &:after {
+            @extend .filter;
+            opacity: .7;
+        }
+        &:before {
+            @extend .background__image;
+            background: url('../images/works-bg-mobile.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: .1;
+        }
+        &__header {
+            padding-top: 4rem;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            &__img {
+                display: block;
+                object-fit: cover;
+                width: 80%;
+                margin: 5% 10%;
+            }
+        }
+        .slick-dots {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 0;
+            li {
+                @include size(.5rem);
+                border-radius: 50%;
+                border: 1px solid #fff;
+                margin: 0 .25rem;
+            }
+            .slick-active {
+                background: #fff;
+            }
+        }
+        &__link {
+            margin: 2rem;
+            font-style: italic;
+            text-decoration: none;
+            color: #fff;
+            padding: 1rem 2rem;
+            width: 10rem;
+            border: 2px solid #fff;
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }

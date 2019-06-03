@@ -131,10 +131,10 @@ const watch = gulp.parallel(watchFiles, browserSync);
 gulp.task('sprite', function() {
     var spriteData = gulp.src('app/images/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
-        cssName: 'sprite.scss',
+        cssName: 'sprite.css',
         padding: 5
     }));
-    return spriteData.pipe(gulp.dest('app/css/sprites/'));
+    return spriteData.pipe(gulp.dest('app/scss/sprites/'));
 });
 
 // export tasks

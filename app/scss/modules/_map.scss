@@ -5,11 +5,9 @@
         @include size(100%, 100vh);
         @include pos($t: 0, $l: 0);
         &:before {
-            content: '';
-            @include size(100%, 100vh);
-            @include pos($t: 0, $l: 0);
-            background-color: rgba(172, 168, 195, .6);
+            @extend .filter;
             z-index: 1;
+            opacity: .5;
             pointer-events: none;
         }
     }
@@ -34,14 +32,49 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: #fff;
+    }
+}
+
+.info {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .6s;
+        @include size(20rem, 5rem);
+        margin: 0 0 1rem 0;
+        &:nth-child(1) {
+            @include pos($t: 20vh, $r: -15rem);
+        }
+        &:nth-child(2) {
+            @include pos($t: 30vh, $r: -15rem);
+        }
+        &--ico {
+            @include size(6rem, 5rem);
+            object-fit: contain;
+            padding: 1.2rem;
+            background: $header__bg;
+        }
+        &--text {
+            @include size(100%, 100%);
+            padding: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, .5);
+        }
+        &--active {
+            right: 0 !important;
+        }
     }
 }
 
 .input__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 1rem;
     .input {
-        width: 50%;
+        width: 49%;
     }
 }
 
@@ -50,7 +83,39 @@
     @media (min-width: $width-md) {
         width: 50%;
         height: 25rem;
-        opacity: .5;
+        opacity: .6;
+    }
+}
+
+.form__button {
+    margin: 1rem;
+    @include size(20rem, 4rem);
+    border-radius: 15px 15px 15px 15px;
+    background: $header__bg;
+    box-shadow: 0 9px #999;
+    &:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
+
+.input {
+    position: relative;
+    // input:focus {
+    //     .placeholder {
+    //         opacity: 0;
+    //     }
+    // }
+}
+
+.placeholder {
+    @include pos($t: 20%, $l: 1rem);
+    font-style: italic;
+    .mark {
+        color: $header__bg;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background: transparent;
     }
 }
 

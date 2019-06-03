@@ -134,9 +134,9 @@ function initMap() {
             disableDefaultUI: true,
             zoomControl: false,
             scaleControl: false,
-            scrollwheel: false,
-            navigationControl: false,
-            mapTypeControl: false
+            scrollwheel: true,
+            navigationControl: true,
+            mapTypeControl: true
 
         });
 
@@ -163,7 +163,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 350) {
         document.getElementById("btn__top").style.display = "block";
         document.getElementById("btn__top").style.opacity = ".5";
     } else {
@@ -195,13 +195,17 @@ document.getElementById("btn__top").onclick = topFunction;
             $(this).toggleClass('burger-menu--active');
             $('body').toggleClass('is-menu-shown');
         });
+        //map button
+        $('.info__item').click(function() {
+            $(this).toggleClass('info__item--active');
+        });
         // slick slider--------------------------
-        // $('.first__slider').slick({
-        //     infinite: true,
-        //     slidesToShow: 1,
-        //     dots: true,
-        //     arrows: false
-        // });
+        $('.slider__recent').slick({
+            infinite: true,
+            slidesToShow: 1,
+            dots: true,
+            arrows: true
+        });
         $('.slider__team').slick({
             infinite: true,
             slidesToShow: 3,
@@ -210,7 +214,7 @@ document.getElementById("btn__top").onclick = topFunction;
             autoplay: true,
             autoplaySpeed: 4000,
             responsive: [{
-                breakpoint: 812,
+                breakpoint: 411,
                 settings: {
                     arrows: false,
                     centerMode: true,
@@ -218,7 +222,7 @@ document.getElementById("btn__top").onclick = topFunction;
                     slidesToShow: 1
                 }
             }, {
-                breakpoint: 1024,
+                breakpoint: 769,
                 settings: {
                     arrows: false,
                     centerMode: true,
